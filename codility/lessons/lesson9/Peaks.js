@@ -5,7 +5,6 @@ function solution(A) {
     const n = A.length;
     // goal: find the maximum number of blocks
     // blocks containing same number of elements
-    // 이진 탐색으로 mid 먼저...
     const peaks = [];
   
     // peak 구하기 O(N)
