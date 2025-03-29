@@ -33,11 +33,11 @@ function solution(A) {
     }
 
     let ans = 0;  // equi leader counting
-    for (let i=1; i<n-1; i++) {
+    for (let i=1; i<=n-1; i++) {
         const tmp = A;
         const leftArr = tmp.slice(0, i);
         const rightArr = tmp.slice(i, n);
-      
+
         if (getLeader(leftArr) == getLeader(rightArr)) {
             ans++;
         }
@@ -47,7 +47,8 @@ function solution(A) {
 }
 
 /*
-Correctness 60%
-Performance 0%
+총 시간복잡도: O(n**2)
 
+Correctness 80%
+Performance 0%
 */
