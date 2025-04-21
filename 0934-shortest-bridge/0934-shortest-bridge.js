@@ -31,6 +31,7 @@ var shortestBridge = function(grid) {
             if (!visited[i][j] && grid[i][j]) {
                 dfs([i, j]);
                 isFound = true;
+                break;
             }
         }
     }
